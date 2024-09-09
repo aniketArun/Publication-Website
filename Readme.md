@@ -82,7 +82,7 @@ Contributions are welcome! If you want to contribute, please follow these steps:
 ## Contact
 
 If you have any questions or suggestions, feel free to contact us at aniketpen8478@gmail.com
-```
+
 
 ### Key Sections:
 - **Features**: Summarizes what the website does.

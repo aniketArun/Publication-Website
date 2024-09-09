@@ -1,0 +1,21 @@
+{%extends 'base.html' %}
+
+{%block start%}
+{% if messages %}
+<div class="alert alert-primary" role="alert">
+    {% for message in messages %}
+    {{ message }}
+    {% endfor %}
+</div>
+{% endif %}
+<div class="container col-6 card shadow-lg mt-2">
+    <!-- templates/isbn_form.html -->
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        <button type="reset" class="btn btn-warning mb-2">Clear</button>
+    </form>
+
+</div>
+{%endblock%}

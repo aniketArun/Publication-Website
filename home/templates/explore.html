@@ -1,0 +1,55 @@
+{%extends 'base.html'%}
+
+{%block start%}
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+          <em>We reccommend you to review the latest pricing and plans before purchase. <a href="{% url 'pricing' %}">View Pricing</a></em>
+
+        </div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <p class="text-center fs-1 fs-bold">Our Services</p>
+    <div class="container d-flex">
+        <div class="card m-2 shadow-lg" style="width: 18rem;">
+            <img src="/static/images/a-book-3044875_640.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Attractive Cover Designs</h5>
+                <p class="card-text">Attractive Cover Designs create eye-catching covers that capture attention and
+                    reflect your book’s theme, helping it stand out in both digital and print formats</p>
+                <a href="{%url 'buyplan'%}" class="btn btn-primary">Buy Designs</a>
+            </div>
+        </div>
+        <div class="card m-2 shadow-lg" style="width: 18rem;">
+            <img src="/static/images/large_ISBN-69ae12.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">ISBN Registration</h5>
+                <p class="card-text">ISBN Registration ensures your book gets a unique identifier, enhancing its
+                    visibility in bookstores and libraries worldwide, making it easier for readers to find and purchase.
+                </p>
+                <a href="{%url 'buyisbn'%}" class="btn btn-success">Apply for ISBN</a>
+            </div>
+        </div>
+        <div class="card m-2 shadow-lg" style="width: 18rem;">
+            <img src="/static/images/computer-screen-6977452_640.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Best Editing</h5>
+                <p class="card-text text-justify">Best Editing offers professional editing services to refine your
+                    manuscript, ensuring clarity, consistency, and error-free content for a polished final product.</p>
+                <a href="{%url 'buyedit'%}" class="btn btn-warning">Buy Edit Plan</a>
+            </div>
+        </div>
+        <div class="card m-2 shadow-lg" style="width: 18rem;">
+            <img src="/static/images/printing-1822209_640.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Color Printing</h5>
+                <p class="card-text">Color Printing provides high-quality, vibrant printing options that bring your
+                    book’s visuals to life, ensuring a stunning presentation for readers.</p>
+                <a href="{%url 'buyedit'%}" class="btn btn-info">Buy Hard Copies</a>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
